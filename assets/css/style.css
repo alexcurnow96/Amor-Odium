@@ -1,0 +1,147 @@
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+/* General styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles */
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.content {
+    margin-top: 30%;
+}
+
+/* Header */
+header {
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+#menu > li {
+    margin-bottom: 1em;
+}
+
+.list {
+    margin-left: 20px;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+#logo {
+    font-family: "Alex Brush", sans-serif;
+    font-weight: 200;
+    font-size: 2.7rem;
+    margin-left: 10px;
+}
+
+/* Navbar styles with dropdown toggle */
+nav {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    display: none;
+    top: 100%;
+    font-family: "Roboto Flex", sans-serif;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+    margin-right: 20px;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
+/* Hero section */
+.hero {
+    font-size: 250%;
+    margin: 30px;
+    font-family: "Roboto Flex", sans-serif;
+}
+.hero h1 {
+    font-weight: 600;
+}
+
+#app{
+    font-size:200%;
+    animation: textclip 2s linear infinite;
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 600;
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 4rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+    #logo {
+        font-size: 400%;
+        margin-left: 20px;
+        font-weight: 100;
+    }
+
+    .content {
+        margin-top: 10%;
+    }
+}
