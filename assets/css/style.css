@@ -95,6 +95,7 @@ nav {
     font-size: 250%;
     margin: 30px;
     font-family: "Roboto Flex", sans-serif;
+    margin-bottom: 100px;
 }
 .hero h1 {
     font-weight: 600;
@@ -116,9 +117,19 @@ nav {
   /* About section */
   .about {
     background-color: darkgray;
-    height: 20%;
-    margin-top: 10%;
+    min-height: 20%;
+    margin-top: 100px;
     text-align: center;
+    padding: 30px;
+  }
+
+  .about p {
+    font-family: "Roboto Flex", sans-serif;
+    margin-top: 20px;
+    font-size: larger;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 
   /* Service section */
@@ -189,31 +200,31 @@ nav {
   .service1 i,
   .service1 h4,
   .service1 .cta {
-    color: #42b7ca;
+    color: #fff;
   }
   
   .service1:hover {
-    border: 2px solid #42b7ca;
+    border: 2px solid #fff;
   }
   
   .service2 i,
   .service2 h4,
   .service2 .cta {
-    color: #425fca;
+    color: #fff;
   }
   
   .service2:hover {
-    border: 2px solid #425fca;
+    border: 2px solid #fff;
   }
   
   .service3 i,
   .service3 h4,
   .service3 .cta {
-    color: #9c42ca;
+    color: #fff;
   }
   
   .service3:hover {
-    border: 2px solid #9c42ca;
+    border: 2px solid #fff;
   }
   
   .service .cta span {
